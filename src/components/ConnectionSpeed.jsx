@@ -18,7 +18,7 @@ const ConnectionSpeed=()=>{
         thresholdUnit="megabyte" // "byte" , "kilobyte", "megabyte"
         threshold={50}
         imageUrl="https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?cs=srgb&dl=pexels-lil-artsy-1213447.jpg&fm=jpg"
-        downloadSize="1561257" //bytes
+        downloadSize="2250856" //bytes
         callbackFunctionOnNetworkDown={(data) =>
           console.log(`Internet speed : ${data}`)
         }
