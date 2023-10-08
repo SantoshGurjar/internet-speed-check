@@ -1,8 +1,8 @@
 import React from "react";
-import "../../node_modules/react-internet-meter/dist/index.css";
+import "react-internet-meter/dist/index.css";
 import { ReactInternetSpeedMeter } from "react-internet-meter";
 // import { useState } from "react";
-function ConnectionSpeed(){
+const ConnectionSpeed=()=>{
     const [checkSpeed, SetCheckSpeed] = React.useState(
       "Finding internet speed."
     );
@@ -17,7 +17,7 @@ function ConnectionSpeed(){
         txtMainHeading="Opps..."
         thresholdUnit="megabyte" // "byte" , "kilobyte", "megabyte"
         threshold={50}
-        imageUrl="https://i.postimg.cc/sft772VP/speedometer.png"
+        imageUrl="https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?cs=srgb&dl=pexels-lil-artsy-1213447.jpg&fm=jpg"
         downloadSize="1561257" //bytes
         callbackFunctionOnNetworkDown={(data) =>
           console.log(`Internet speed : ${data}`)
